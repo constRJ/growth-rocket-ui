@@ -1,0 +1,16 @@
+@import "../variables/index";
+
+@function switch-font-color($color) {
+  @if (lightness($color) > 60) {
+    @return $dark-gray; // Lighter background, return dark color
+  } @else {
+    @return $light; // Darker background, return light color
+  }
+}
+@function button-font-color($key) {
+  @if $key == "yellow" {
+    @return $brown;
+  } @else if $key == "orange-red" {
+    @return $light;
+  }
+}

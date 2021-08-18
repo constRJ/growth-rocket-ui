@@ -1,0 +1,26 @@
+@import "../fonts/index";
+
+// Color Variable
+$brown: #3d2514;
+$light: #ffffff;
+$yellow: #ffc045;
+$orange-red: #bf2222;
+$dark-gray: #3d3d3d;
+
+// Fonts Variable
+$text-brown: $brown;
+$text-light: $light;
+
+// Font Family
+$body-text: "Montserrat", sans-serif;
+$body-htag-text: "Alfa Slab One", cursive;
+$body-sub-text: "Bebas Neue", cursive;
+
+// Color theming
+$custom-color-theme: (
+  "brown": $brown,
+  "light": $light,
+  "yellow": $yellow,
+  "orange-red": $orange-red,
+  "dark-gray": $dark-gray,
+);

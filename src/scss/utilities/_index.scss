@@ -1,0 +1,35 @@
+@import "../mixins/index";
+@import "../functions/index";
+@import "../variables/";
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+// Nav Utility Classes
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  color: $text-brown;
+  font-size: 1rem;
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: 1px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  @include MakeButtonTransition();
+}
+
+@each $key, $value in $custom-color-theme {
+  .btn-#{key} {
+    background-color: $value;
+    color: MakeButtonFontColor($key);
+  }
+}

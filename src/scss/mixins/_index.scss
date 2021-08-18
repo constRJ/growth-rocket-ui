@@ -1,0 +1,3 @@
+@mixin MakeButtonTransition() {
+  transition: background-color, color, 0.2s ease-in-out;
+}
