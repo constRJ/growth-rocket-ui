@@ -4,7 +4,7 @@ import React from "react";
 
 const BurgerHouseNavbar = () => {
   return (
-    <>
+    <React.Fragment>
       <nav className="nav">
         <div className="container custom-container">
           <div className="navbar-brand-container">
@@ -32,7 +32,7 @@ const BurgerHouseNavbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </React.Fragment>
   )
 }
 
