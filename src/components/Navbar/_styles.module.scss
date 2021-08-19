@@ -1,8 +1,12 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  position: absolute;
   padding: 55px 0 0 0;
+  .custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .navbar-right-container {
     .navbar-express {
       display: flex;
@@ -11,7 +15,11 @@
       padding: 0 2rem 0 0;
       p {
         font-weight: 700;
+        margin: 0 0 0 1rem;
       }
+    }
+    .navbar {
+      justify-content: flex-end;
     }
   }
 }
