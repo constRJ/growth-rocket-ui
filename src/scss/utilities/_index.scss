@@ -14,7 +14,7 @@
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 80px 50px 0px;
 }
 // Nav Utility Classes
 .navbar {
@@ -30,7 +30,7 @@
   font-family: $body-sub-text;
   @include MakeButtonTransition;
   &:hover {
-    color: $yellow;
+    color: $dark-gray;
   }
 }
 
@@ -67,6 +67,7 @@
 // Font Utility Class
 .text-bebas {
   font-family: $body-sub-text;
+  letter-spacing: 1px;
 }
 .text-alfa {
   font-family: $body-htag-text;
