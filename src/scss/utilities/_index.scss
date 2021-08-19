@@ -6,12 +6,15 @@
 .container {
   max-width: 1440px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 50px;
 }
 .container-fluid {
   max-width: 100%;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 // Nav Utility Classes
 .navbar {
@@ -59,4 +62,12 @@
 // Text Utility Class
 .text-b {
   color: $text-brown;
+}
+
+// Font Utility Class
+.text-bebas {
+  font-family: $body-sub-text;
+}
+.text-alfa {
+  font-family: $body-htag-text;
 }
