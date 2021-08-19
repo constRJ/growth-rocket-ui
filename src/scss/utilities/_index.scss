@@ -15,8 +15,18 @@
 }
 .nav-link {
   color: $text-brown;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 2rem;
+  letter-spacing: 2px;
+  font-family: $body-sub-text;
+  @include MakeButtonTransition;
+  &:hover {
+    color: $yellow;
+  }
 }
+
+// Button Utility Class
 .btn {
   outline: none;
   cursor: pointer;
@@ -28,8 +38,20 @@
 }
 
 @each $key, $value in $custom-color-theme {
-  .btn-#{key} {
+  .btn-#{$key} {
+    @extend .btn;
     background-color: $value;
-    color: MakeButtonFontColor($key);
+    color: switch-font-color($value);
+    font-family: button-fonts($key);
+    &:hover {
+      background-color: transparent;
+      border-color: $value;
+      color: hover-button-font-color($key);
+    }
   }
+}
+
+// Text Utility Class
+.text-b {
+  color: $text-brown;
 }

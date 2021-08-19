@@ -1,16 +1,27 @@
 @import "../variables/index";
 
 @function switch-font-color($color) {
-  @if (lightness($color) > 60) {
+  @if lightness($color) > 60 {
     @return $dark-gray; // Lighter background, return dark color
   } @else {
     @return $light; // Darker background, return light color
   }
 }
-@function button-font-color($key) {
+@function hover-button-font-color($key) {
   @if $key == "yellow" {
     @return $brown;
   } @else if $key == "orange-red" {
-    @return $light;
+    @return $brown;
+  } @else {
+    @return $brown;
+  }
+}
+@function button-fonts($key) {
+  @if $key == "yellow" {
+    @return $body-sub-text;
+  } @else if $key == "orange-red" {
+    @return $body-htag-text;
+  } @else {
+    @return $body-text;
   }
 }
