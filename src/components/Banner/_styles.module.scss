@@ -66,6 +66,23 @@
     .banner-image {
       margin: 8rem 0 0 0;
       padding: 1rem;
+      position: relative;
+      z-index: 1;
+      &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 150px;
+        right: 0%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        /* border: 1px solid black; */
+        background-color: #fff;
+        box-shadow: -1px -150px 400px 32px #fff;
+        z-index: -1;
+      }
       img {
         max-width: 100%;
       }
