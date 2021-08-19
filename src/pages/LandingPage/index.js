@@ -3,9 +3,7 @@ import React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="container">
-      <LandingPageLayout />
-    </div>
+    <LandingPageLayout />
   )
 }
 
