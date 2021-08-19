@@ -3,7 +3,7 @@ import React from "react"
 
 const BurgerHouseBanner = () => {
   return (
-    <>
+    <React.Fragment>
       <section className="banner-container">
         <div className="container banner-custom-container">
           <div className="banner-info">
@@ -16,7 +16,7 @@ const BurgerHouseBanner = () => {
           </div>
         </div>
       </section>
-    </>
+    </React.Fragment>
   )
 }
 export default BurgerHouseBanner
