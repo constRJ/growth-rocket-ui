@@ -29,6 +29,13 @@ const BurgerHouseNavbar = () => {
                 <a href="/" className="nav-link">CONTACT US</a>
               </li>
             </ul>
+            <div className="navbar-toggler-menu-container">
+              <div className="navbar-toggler-menu-icon">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

@@ -28,3 +28,49 @@
     }
   }
 }
+@mixin min-breakpoint($sizes) {
+  @if $sizes == xs {
+    @media screen and (min-width: 0px) {
+      @content;
+    }
+  } @else if $sizes == sm {
+    @media screen and (min-width: 577px) {
+      @content;
+    }
+  } @else if $sizes == md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $sizes == lg {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $sizes == xl {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+@mixin max-breakpoint($sizes) {
+  @if $sizes == xs {
+    @media screen and (max-width: 0px) {
+      @content;
+    }
+  } @else if $sizes == sm {
+    @media screen and (max-width: 577px) {
+      @content;
+    }
+  } @else if $sizes == md {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $sizes == lg {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  } @else if $sizes == xl {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+}
