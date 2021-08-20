@@ -58,16 +58,25 @@
     }
     .reservation-image-1 {
       top: 0;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
     }
     .reservation-image-2 {
       top: 9%;
       left: 17%;
       transform: translate(-50%, 50%);
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
     .reservation-image-3 {
       bottom: 25%;
       right: -34%;
       transform: translate(-50%, 50%);
+      @media screen and (max-width: 1344px) {
+        display: none;
+      }
     }
   }
 }
