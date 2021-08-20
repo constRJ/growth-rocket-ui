@@ -5,6 +5,18 @@
   width: 100%;
   height: 100vh;
   padding: 40px 50px 0;
+  @include breakpoint(lg) {
+    height: 100%;
+  }
+  @include breakpoint(md) {
+    height: 100%;
+  }
+  @include breakpoint(sm) {
+    height: 100%;
+  }
+  @include breakpoint(xs) {
+    height: 100%;
+  }
   .product-desc {
     h2,
     p {
@@ -35,20 +47,23 @@
     }
   }
   .products {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 370px));
-    grid-column-gap: 8%;
-    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(3, minmax(250px, 370px));
+    // grid-column-gap: 8%;
+    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
     padding: 70px 0 0;
-    @include breakpoint(md) {
-      grid-template-columns: repeat(2, minmax(250px, 370px));
-      grid-row-gap: 8%;
-    }
+
     .product-item {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      max-width: 370px;
+      width: 100%;
+      padding: 0 0 50px;
       .product-img-container {
         img {
           max-width: 370px;

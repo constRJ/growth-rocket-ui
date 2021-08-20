@@ -5,7 +5,7 @@ import React from "react";
 const BurgerHouseProduct = () => {
   return (
     <React.Fragment>
-      <div className="product-container">
+      <section className="product-container">
         <div className="product-desc">
           <h2 className="text-b">CHOOSE & ENJOY</h2>
           <p className="text-b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, aperiam dicta? Delectus culpa nulla est magni sed in molestiae eius sit ea ullam non, cumque, dolores fugiat adipisci corrupti reprehenderit.</p>
@@ -36,7 +36,7 @@ const BurgerHouseProduct = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </React.Fragment>
   )
 }
