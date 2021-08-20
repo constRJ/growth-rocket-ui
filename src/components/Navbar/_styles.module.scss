@@ -11,6 +11,13 @@
     justify-content: space-between;
     align-items: center;
   }
+  .navbar-brand-container {
+    .navbar-brand {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
   .navbar-right-container {
     .navbar-express {
       display: flex;
