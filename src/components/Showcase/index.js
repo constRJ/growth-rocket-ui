@@ -3,7 +3,7 @@ import React from "react";
 const BurgerHouseShowcase = () => {
   return (
     <React.Fragment>
-      <div className="container-fluid">
+      <section className="container-fluid">
         <div className="burger-showcase-container">
           <div className="burger-col-1">
             <div className="burger-showcase-desc">
@@ -28,7 +28,7 @@ const BurgerHouseShowcase = () => {
           </div>
         </div>
         <div className="btn btn-yellow text-bebas catch-phrase">ALWAYS TASTY BURGER</div>
-      </div>
+      </section>
     </React.Fragment>
   )
 }
