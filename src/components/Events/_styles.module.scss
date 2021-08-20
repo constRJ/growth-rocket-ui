@@ -35,6 +35,10 @@
             padding: 2rem 0 2rem 2rem;
             order: 2;
           }
+          @include max-breakpoint(sm) {
+            padding: 1rem;
+            order: 2;
+          }
           h4 {
             font-size: 2rem;
             line-height: 25px;
