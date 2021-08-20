@@ -9,6 +9,15 @@
   height: 100%;
   margin: 0 auto;
   padding: 0 50px;
+  @include max-breakpoint(lg) {
+    padding: 0 40px;
+  }
+  @include max-breakpoint(md) {
+    padding: 0 30px;
+  }
+  @include max-breakpoint(sm) {
+    padding: 0 20px;
+  }
 }
 .container-fluid {
   max-width: 100%;
