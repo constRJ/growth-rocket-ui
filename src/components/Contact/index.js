@@ -53,17 +53,17 @@ const BurgerHouseContact = () => {
         <div className="contact-img-container">
           <img
             src={BurgerLeft}
-            alt="burger-house-reservation-image"
+            alt="burger-house-reservation"
             className="reservation-image-1"
           />
           <img
             src={Coke}
-            alt="burger-house-reservation-image"
+            alt="burger-house-coke-img"
             className="reservation-image-2"
           />
           <img
             src={BurgerRight}
-            alt="burger-house-reservation-image"
+            alt="burger-house-plating"
             className="reservation-image-3"
           />
         </div>
