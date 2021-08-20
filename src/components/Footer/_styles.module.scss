@@ -5,21 +5,38 @@
   background-image: url("../../assets/images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @include max-breakpoint(md) {
+    height: 100%;
+    margin: 0px 20px 20px 20px;
+  }
   .footer-content {
     display: flex;
     flex-direction: column;
     height: 100%;
+
     .footer-row-1 {
       height: 100%;
       display: flex;
+      @include max-breakpoint(md) {
+        flex-direction: column;
+      }
       .footer-col-1,
       .footer-col-2 {
         width: 50%;
+        @include max-breakpoint(md) {
+          width: 100%;
+        }
       }
       .footer-col-1 {
         padding: 0 0 0 40px;
+        @include max-breakpoint(md) {
+          padding: 0 20px;
+        }
         .footer-logo {
           padding: 85px 0 0 0;
+          @include max-breakpoint(md) {
+            text-align: center;
+          }
           .footer-brand {
             img {
               max-width: 100%;
@@ -30,6 +47,9 @@
           p {
             padding: 50px 0 0 0;
             line-height: 25px;
+            @include max-breakpoint(md) {
+              text-align: center;
+            }
           }
         }
       }
@@ -55,12 +75,24 @@
       display: flex;
       justify-content: space-between;
       padding: 0 40px;
+      @include max-breakpoint(md) {
+        flex-direction: column;
+        padding: 0 20px;
+      }
       .footer-copyrights {
         align-items: center;
         display: flex;
+        @include max-breakpoint(md) {
+          justify-content: center;
+          order: 2;
+          text-align: center;
+        }
       }
       .footer-social-icons {
         display: flex;
+        @include max-breakpoint(md) {
+          justify-content: center;
+        }
         li {
           margin: 0 1rem 0 0;
           &:nth-child(4) {
