@@ -23,7 +23,7 @@
     margin: 0 auto;
     .form-container {
       display: grid;
-      padding: 50px 0 0 0;
+      padding: 80px 0 0 0;
       grid-template-columns: repeat(2, minmax(auto, 380px));
       grid-template-rows: 250px;
       grid-column-gap: 30px;
@@ -60,8 +60,8 @@
       top: 0;
     }
     .reservation-image-2 {
-      top: 5%;
-      left: 18%;
+      top: 9%;
+      left: 17%;
       transform: translate(-50%, 50%);
     }
     .reservation-image-3 {
