@@ -1,4 +1,5 @@
 import BurgerHouseBanner from "@components/Banner";
+import BurgerHouseContact from "@components/Contact";
 import BurgerHouseEvents from "@components/Events";
 import BurgerHouseNavbar from "@components/Navbar";
 import BurgerHouseProduct from "@components/Products";
@@ -13,6 +14,7 @@ const LandingPageLayout = () => {
       <BurgerHouseShowcase />
       <BurgerHouseProduct />
       <BurgerHouseEvents />
+      <BurgerHouseContact />
     </>
   )
 }

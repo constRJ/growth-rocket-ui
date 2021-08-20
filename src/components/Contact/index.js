@@ -51,9 +51,21 @@ const BurgerHouseContact = () => {
           </form>
         </div>
         <div className="contact-img-container">
-          <img src={BurgerLeft} alt="burger-house-reservation-image" />
-          <img src={Coke} alt="burger-house-reservation-image" />
-          <img src={BurgerRight} alt="burger-house-reservation-image" />
+          <img
+            src={BurgerLeft}
+            alt="burger-house-reservation-image"
+            className="reservation-image-1"
+          />
+          <img
+            src={Coke}
+            alt="burger-house-reservation-image"
+            className="reservation-image-2"
+          />
+          <img
+            src={BurgerRight}
+            alt="burger-house-reservation-image"
+            className="reservation-image-3"
+          />
         </div>
       </section>
     </React.Fragment>
