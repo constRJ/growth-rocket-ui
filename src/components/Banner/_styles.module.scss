@@ -16,6 +16,9 @@
   @include max-breakpoint(sm) {
     height: 90vh;
   }
+  @include landscape-breakpoint(sm) {
+    height: 600px;
+  }
   .banner-custom-container {
     display: flex;
     align-items: center;
@@ -97,6 +100,10 @@
         max-width: 450px;
       }
       @include max-breakpoint(sm) {
+        margin: 0 0 0 0;
+        max-width: 350px;
+      }
+      @include landscape-breakpoint(sm) {
         margin: 0 0 0 0;
         max-width: 350px;
       }

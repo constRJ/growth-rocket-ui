@@ -9,6 +9,9 @@
   @include max-breakpoint(sm) {
     padding: 20px 0 0 0;
   }
+  @include landscape-breakpoint(sm) {
+    padding: 20px 0 0 0;
+  }
   .custom-container {
     display: flex;
     justify-content: space-between;
