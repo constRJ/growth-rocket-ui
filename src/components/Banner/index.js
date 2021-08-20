@@ -8,7 +8,7 @@ const BurgerHouseBanner = () => {
         <div className="container banner-custom-container">
           <div className="banner-info">
             <p className="text-b text-bebas">IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</p>
-            <h1 className="text-b">BURGER</h1>
+            <h1 className="text-b">BURGER <span className="banner-sp-text">WEEK</span></h1>
             <h2 className="text-b">WEEK</h2>
           </div>
           <div className="banner-image">
