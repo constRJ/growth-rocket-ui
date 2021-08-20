@@ -21,9 +21,6 @@ const BurgerHouseFooter = () => {
               <div className="footer-desc">
                 <p className="text-lw">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra maecenas accumsan lacus vel facilisis. </p>
               </div>
-              {/* <div className="footer-copyrights text-l text-bebas">
-              <p>&copy; BURGER HOUSE 2020. ALL RIGHTS RESERVED</p>
-            </div> */}
             </div>
             <div className="footer-col-2">
               <ul className="footer-company-info">

@@ -44,7 +44,7 @@
         font-size: 7rem;
         // font-size: calc(18px + 40 * ((100vw - 320px) / 680));
         @include breakpoint(xs) {
-          font-size: calc(18px + 40 * ((100vw - 320px) / 680));
+          font-size: calc(18px + 100 * ((100vw - 320px) / 680));
         }
         @include breakpoint(sm) {
           font-size: calc(18px + 40 * ((100vw - 320px) / 680));
