@@ -7,6 +7,7 @@
   grid-template-columns: repeat(2, minmax(300px, 600px));
   grid-column-gap: 2.8125rem;
   padding: 0 0 70px;
+  overflow-x: hidden;
   @include max-breakpoint(md) {
     grid-template-columns: minmax(300px, 600px);
     grid-row-gap: 32px;
