@@ -1,5 +1,7 @@
 import MotorIcon from "@assets/icon/delivery-motor-icon.png";
-import BurgerHouseLogo from "@assets/logo/burger-house-logo.png";
+import Logo from "@components/Logo";
+// import BurgerHouseLogo from "@assets/logo/burger-house-logo.png";
+// import SVGBurgerHouseLogo from "@assets/logo/burger-house-logo.svg";
 import React, { useState } from "react";
 const BurgerHouseNavbar = () => {
   const [menu, setMenu] = useState(false)
@@ -9,7 +11,7 @@ const BurgerHouseNavbar = () => {
       <nav className="nav">
         <div className="container custom-container">
           <div className="navbar-brand-container">
-            <a href="/" className="navbar-brand"><img src={BurgerHouseLogo} alt="burger house logo" /></a>
+            <a href="/" className="navbar-brand"><Logo /></a>
           </div>
           <div className="navbar-right-container">
             <div className="navbar-express">
