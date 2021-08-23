@@ -1,19 +1,40 @@
 import BannerBurger from "@assets/banner/banner-image.png"
+import { motion } from "framer-motion"
 import React from "react"
-
 const BurgerHouseBanner = () => {
+
   return (
     <React.Fragment>
       <section className="banner-container">
         <div className="container banner-custom-container">
           <div className="banner-info">
-            <p className="text-b text-bebas">IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</p>
-            <h1 className="text-b">BURGER <span className="banner-sp-text">WEEK</span></h1>
-            <h2 className="text-b">WEEK</h2>
+            <motion.p
+              className="text-b text-bebas"
+              initial={{ x: "-100vw", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >IT IS A GOOD TIME FOR THE GREAT TASTE OF BURGERS</motion.p>
+            <motion.h1
+              className="text-b"
+              initial={{ x: "-100vw", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >BURGER</motion.h1>
+            <motion.h2
+              className="text-b"
+              initial={{ x: "-100vw", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{ duration: 0.7 }}
+            >WEEK</motion.h2>
           </div>
-          <div className="banner-image">
+          <motion.div
+            className="banner-image"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
             <img src={BannerBurger} alt="banner-burger-house" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </React.Fragment>

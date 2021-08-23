@@ -11,7 +11,7 @@
     height: 70vh;
   }
   @include max-breakpoint(md) {
-    height: 80vh;
+    height: 90vh;
   }
   @include max-breakpoint(sm) {
     height: 90vh;
@@ -87,6 +87,7 @@
         }
         @include max-breakpoint(md) {
           display: none;
+          text-align: center;
         }
       }
     }
