@@ -4,29 +4,29 @@ const Logo = () => {
     <svg width="263" height="58" viewBox="0 0 263 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <g id="burger-house-logo">
         <rect width="263" height="58" fill="transparent" />
-        <g id="bite1" clip-path="url(#clip0)" >
+        <g id="bite1" clipPath="url(#clip0)" >
           <path id="bite1_2" d="M263 0H0V58H263V0Z" fill="transparent" />
           <path id="bite1_3" d="M58 0H0V58H58V0Z" fill="url(#pattern0)"
           />
         </g>
-        <g id="bite4" clip-path="url(#clip1)">
+        <g id="bite4" clipPath="url(#clip1)">
           <path id="bite4_2" d="M263 0H0V58H263V0Z" fill="transparent" />
           <path id="bite4_3" d="M58 0H0V58H58V0Z" fill="url(#pattern1)"
 
           />
         </g>
-        <g id="bite3" clip-path="url(#clip2)">
+        <g id="bite3" clipPath="url(#clip2)">
           <path id="bite3_2" d="M263 0H0V58H263V0Z" fill="transparent" />
           <path id="bite3_3" d="M58 0H0V58H58V0Z" fill="url(#pattern2)"
 
           />
         </g>
-        <g id="bite2" clip-path="url(#clip3)">
+        <g id="bite2" clipPath="url(#clip3)">
           <path id="bite2_2" d="M263 0H0V58H263V0Z" fill="transparent" />
           <path id="bite2_3" d="M58 0H0V58H58V0Z" fill="url(#pattern3)"
           />
         </g>
-        <g id="Slice 1" clip-path="url(#clip4)">
+        <g id="Slice 1" clipPath="url(#clip4)">
           <path id="bh-text" d="M263 0H0V58H263V0Z" fill="transparent" />
           <path id="bh-text_2" d="M263 0H0V58H263V0Z" fill="url(#pattern4)" />
         </g>
