@@ -1,8 +1,9 @@
 import MotorIcon from "@assets/icon/delivery-motor-icon.png";
 import BurgerHouseLogo from "@assets/logo/burger-house-logo.png";
-import React from "react";
-
+import React, { useState } from "react";
 const BurgerHouseNavbar = () => {
+  const [menu, setMenu] = useState(false)
+
   return (
     <React.Fragment>
       <nav className="nav">
@@ -15,7 +16,7 @@ const BurgerHouseNavbar = () => {
               <img src={MotorIcon} alt="express-delivery-icon" className="navbar-express-icon" />
               <p className="text-b">Express Delivery +1 234 567 890</p>
             </div>
-            <ul className="navbar">
+            <ul className={menu ? "navbar show" : "navbar"}>
               <li className="nav-item">
                 <a href="/" className="nav-link">HOME</a>
               </li>
@@ -29,8 +30,8 @@ const BurgerHouseNavbar = () => {
                 <a href="/" className="nav-link">CONTACT US</a>
               </li>
             </ul>
-            <div className="navbar-toggler-menu-container">
-              <div className="navbar-toggler-menu-icon">
+            <div className="navbar-toggler-menu-container" onClick={() => setMenu(!menu)}>
+              <div className={menu ? "navbar-toggler-menu-icon active" : "navbar-toggler-menu-icon"}>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
