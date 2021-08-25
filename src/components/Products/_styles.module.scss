@@ -10,15 +10,19 @@
   }
   @include breakpoint(lg) {
     height: 100%;
+    padding: 0 40px;
   }
   @include breakpoint(md) {
     height: 100%;
+    padding: 0 30px;
   }
   @include breakpoint(sm) {
     height: 100%;
+    padding: 0 20px;
   }
   @include breakpoint(xs) {
     height: 100%;
+    padding: 0 20px;
   }
   .product-desc {
     h2,
@@ -29,7 +33,7 @@
       font-size: 3.5rem;
       // font-size: calc(18px + 16 * ((100vw - 320px) / 680));
       @include breakpoint(xs) {
-        font-size: calc(18px + 16 * ((100vw - 320px) / 680));
+        font-size: calc(18px + 50 * ((100vw - 320px) / 680));
       }
       @include breakpoint(sm) {
         font-size: calc(18px + 16 * ((100vw - 320px) / 680));
