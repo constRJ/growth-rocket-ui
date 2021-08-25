@@ -49,6 +49,10 @@
     @media screen and (min-width: 1200px) {
       @content;
     }
+  } @else if $sizes == xxl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
   }
 }
 @mixin max-breakpoint($sizes) {
@@ -70,6 +74,10 @@
     }
   } @else if $sizes == xl {
     @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $sizes == xxl {
+    @media screen and (max-width: 1400px) {
       @content;
     }
   }
