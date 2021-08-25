@@ -24,6 +24,15 @@
   width: 100%;
   margin: 0 auto;
   padding: 80px 50px 0px;
+  @include max-breakpoint(lg) {
+    padding: 80px 40px;
+  }
+  @include max-breakpoint(md) {
+    padding: 80px 30px;
+  }
+  @include max-breakpoint(sm) {
+    padding: 80px 20px;
+  }
 }
 // Nav Utility Classes
 .navbar {
