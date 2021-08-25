@@ -49,16 +49,7 @@
         @include breakpoint(xs) {
           font-size: calc(18px + 100 * ((100vw - 320px) / 680));
         }
-        @include breakpoint(sm) {
-          font-size: calc(18px + 40 * ((100vw - 320px) / 680));
-        }
-        @include breakpoint(md) {
-          font-size: calc(18px + 40 * ((100vw - 320px) / 680));
-        }
-        @include breakpoint(lg) {
-          font-size: calc(18px + 40 * ((100vw - 320px) / 680));
-        }
-        @include breakpoint(xl) {
+        @include max-breakpoint(xl) {
           font-size: calc(18px + 40 * ((100vw - 320px) / 680));
         }
         @include max-breakpoint(md) {
@@ -92,10 +83,12 @@
       }
     }
     .banner-image {
-      margin: 8rem 0 0 0;
+      margin: 0 0 0 0;
       padding: 1rem;
       position: relative;
-      z-index: 1;
+      width: 100%;
+      height: 100%;
+
       @include max-breakpoint(md) {
         margin: 0 0 0 0;
         max-width: 450px;
@@ -108,21 +101,25 @@
         margin: 0 0 0 0;
         max-width: 350px;
       }
-      &::after {
-        content: "";
-        display: block;
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        top: 150px;
-        right: 0%;
-        transform: translateX(-50%);
-        border-radius: 50%;
-        box-shadow: -1px -100px 400px 32px #fff;
-        z-index: -1;
-      }
+      // &::after {
+      //   content: "";
+      //   display: block;
+      //   width: 50%;
+      //   height: 50%;
+      //   position: absolute;
+      //   top: 150px;
+      //   right: 0%;
+      //   transform: translateX(-50%);
+      //   border-radius: 50%;
+      //   box-shadow: -1px -100px 400px 32px #fff;
+      //   z-index: -1;
+      // }
       img {
         width: 100%;
+        position: absolute;
+        top: 45%;
+        right: 45%;
+        transform: translate(50%, -50%);
       }
     }
   }
