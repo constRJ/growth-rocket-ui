@@ -1,6 +1,7 @@
-const ButtonSoftRed = ({ className, type, title }) => {
+import { motion } from "framer-motion"
+const ButtonSoftRed = ({ className, type, title, animate }) => {
   return (
-    <button className={className} type={type}>{title}</button>
+    <motion.button className={className} type={type} animate={animate}>{title}</motion.button>
   )
 }
 
