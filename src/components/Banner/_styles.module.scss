@@ -92,10 +92,12 @@
       @include max-breakpoint(md) {
         margin: 0 0 0 0;
         max-width: 450px;
+        height: 390px;
       }
       @include max-breakpoint(sm) {
         margin: 0 0 0 0;
         max-width: 350px;
+        height: 350px;
       }
       @include landscape-breakpoint(sm) {
         margin: 0 0 0 0;
@@ -120,6 +122,47 @@
         top: 45%;
         right: 45%;
         transform: translate(50%, -50%);
+      }
+      .banner-burger-price {
+        width: 165px;
+        height: 165px;
+        position: absolute;
+        bottom: 0%;
+        right: 71%;
+        transform: translate(50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: $orange-red;
+        @include max-breakpoint(lg) {
+          right: 74%;
+          bottom: -28px;
+          width: 145px;
+          height: 145px;
+        }
+        @include max-breakpoint(sm) {
+          right: 80%;
+          bottom: -45px;
+          width: 130px;
+          height: 130px;
+        }
+        &::after() {
+          content: "";
+          width: 90%;
+          height: 90%;
+          border-radius: 50%;
+          position: absolute;
+          background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='7' stroke-dasharray='20%2c 14%2c 15' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+          border-radius: 100px;
+        }
+        p {
+          font-size: 1.25rem;
+          .banner-custom-price {
+            font-size: 2.5rem;
+          }
+        }
       }
     }
   }

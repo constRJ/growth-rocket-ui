@@ -34,6 +34,10 @@ const BurgerHouseBanner = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
           >
             <img src={BannerBurger} alt="banner-burger-house" />
+            <div className="banner-burger-price">
+              <p className="text-l"><span className="banner-custom-price">$5</span>.49</p>
+              <p className="text-l">ONLY</p>
+            </div>
           </motion.div>
         </div>
       </section>
